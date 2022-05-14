@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: rgb(68, 125, 199);
+            color: white;
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Début d'etudes avec DOM</h1>
+    <p>Ici Le résultat</p>
+    <p>Apprendre à utiliser le <strong>DOM</strong> avec JavaScript</p>
+    <div id="msg">Cliquez ici par ID</div>
+    <div name="msg">Cliquez ici par Name</div>
+    <div class="msg">Cliquez ici par Class</div>
+
+
+
+    <script>
+
+        /*window.document.write('Hello World<br/>')
+        window.document.write(`Codification: ${window.document.characterSet}<br/><br/>`)
+        window.document.write(`${window.navigator.appName} <br/><br/>`)
+        window.document.write(`${window.document.URL} <br/><br/>`)
+*/
+        //selectinner par marcage
+        var corp = window.document.body;
+        var p1 = window.document.getElementsByTagName('p')[0];
+        /*window.document.write(`Utilisant le <strong>DOM</strong> pour selectionner
+        et afficher un paragraphe: ${p1.innerText} <br/>`);
+        p1.style.color = 'black';
+        corp.style.background = 'blue';
+        document.write(p1.innerHTML)[1] //selectione le tag avec le contenu en html
+*/
+        // Selectionner par nom
+
+        /*  var d = window.document.getElementById('msg');
+          d.style.background = 'green'
+          d.innerText = `J\'attends\n`;
+          // window.document.getElementById('msg').innerText = 'Helo' // change le cotenu text du element
+          */
+
+
+        // Selectionner le tag par elements
+        var dId = window.document.getElementById('msg'); //N'est pas necessaire de selectionner la position par ID
+        var dName = window.document.getElementsByName('msg')[0]; 
+        var dClass = window.document.getElementsByClassName('msg')[0];
+        dId.innerText = 'Ola por id';
+        dName.innerText = 'Hello by name';
+        dClass.innerText = 'Salut par classe';
+
+
+        // Selectionner le tag par selecteur
+        var dSelId = window.document.querySelector('div#msg') //utiliser le # pour selectionner par id
+        var dSelClass = window.document.querySelector('div.msg') // utiliser . (point) pour selectionner par classe
+        dSelId.style.color = 'blue';
+        dSelId.style.background = 'yellow'
+        dSelClass.style.background = 'green';
+        dSelClass.style.color = 'red';
+
+
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div#area {
+            font: normal 20pt Arial;
+            background: rgb(18, 219, 18);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="area"> <!-- onclick="cliquer()" onmouseenter="enterMouse()" onmouseout="sortir()" --> <!--N'est pas necessaire utiliser
+    quand nous avons le addEventListenner  dedans script--> 
+           Interaction...
+    </div>
+
+    <script>
+        var c = document.getElementById('area')
+        c.addEventListener('click', cliquer)
+        c.addEventListener('mouseenter', enterMouse)
+        c.addEventListener('mouseout', sortir)
+        function cliquer() {
+            c.innerText = 'Cliqué';
+            c.style.background = 'red'
+
+        }
+        function enterMouse() {
+            c.innerText = 'Entré'
+            c.style.background = 'blue'
+
+        }
+        function sortir() {
+            c.innerText = 'Saiu'
+            c.style.background = 'green'
+
+        }
+    </script>
+
+
+</body>
+
+</html>

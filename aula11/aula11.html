@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--<script src="/aula11/ex009.js"></script>-->
+</head>
+<body>
+    <h1>Système de flashes</h1>
+    <p>Vitesse <input type="number" id="txtvel" name="txtvel">
+        <input type="button" value="Verifier" onclick="verifier()"></p>
+    <p id="resultat">resultat</p>
+
+        <script>
+            function verifier() {
+                var vit = document.getElementById('txtvel')
+                var res = document.getElementById('resultat')
+                var limite = Number(vit.value)
+
+                if (limite > 60) {
+                    res.innerText = 'Vous êtes au dessous du limite'
+                    
+                }else{
+                    res.innerText = 'Bonne Voyage!'
+                }
+                
+            }
+        </script>
+
+    </body>
+</html>
