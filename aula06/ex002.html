@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+                background-color: rgb(105, 105, 173);
+                color: white;
+                font: normal 20pt Arial;
+        }
+        h1 {
+            color: rgb(251, 255, 0);
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Index JS - Guanabara</h1>
+
+    <script>
+        //window.alert('Première message avec alert'); // pop-up avec msg et button OK
+        //window.confirm('Test button, cliquez sur OK'); //popup
+       // var nom = window.prompt('Quel est votre nom?');
+        //window.alert(`C'est un plasir ${nom}`)
+        var n1 = Number.parseInt(window.prompt(`Tapez un numèro(1)`)) // conversion du strin en numero Number.parseInt
+        var n2 = Number.parseInt(window.prompt(`Tapez un numèro(2)`)) //si il est un numero float, utiliser Number.parseFloat
+        var n3 = Number(window.prompt(`Tapez un numèro(3)`)) // est possible d'utiliser just Number
+            //pour convertir un numero en string il faut utiliser la variable.toString() ou String((variable))
+ 
+        var som = n1+n2+n3; // après la conversion, il est possible de 
+        window.alert(`La somme des deux numeros est: ${som}\n
+            Le somme converti en String1: ${som.toString()}\n
+                La somme converti en String2 ${String(som)} `);
+    </script>
+    
+</body>
+</html>

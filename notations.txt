@@ -1,0 +1,7 @@
+Operators
+5 + 2 = 7
+5 - 2 = 3
+5 * 2 = 10
+5 / 2 = 2.5
+5 % 2 = 1 Division real, restant de la division entre 5 et 2 = 1 car la division arrete quan necessite d'une virgule
+5 ** 2 = 25 exponentiation (5*5) / 5**3 (5*5*5)
